@@ -1,7 +1,7 @@
 constretto-android
 ==================
 
-Useful [Constretto project](http://constretto.org/) extensions for Android.
+Useful [Constretto project](http://constretto.github.io/) extensions for Android.
 
 Planned features
 ----------------
