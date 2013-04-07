@@ -13,6 +13,9 @@
     <groupId>org.constretto</groupId>
     <artifactId>constretto-android-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>contretto-android</module>
+    </modules>
     <packaging>pom</packaging>
     <name>Constretto-Android :: Parent</name>
     <inceptionYear>2013</inceptionYear>
@@ -53,6 +56,22 @@
     </licenses>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <constretto-core.version>2.0.4-SNAPSHOT</constretto-core.version>
+        <android.version>4.1.1.4</android.version>
     </properties>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.constretto</groupId>
+                <artifactId>constretto-core</artifactId>
+                <version>${constretto-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.android</groupId>
+                <artifactId>android</artifactId>
+                <version>${android.version}</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
