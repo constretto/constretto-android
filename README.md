@@ -13,7 +13,7 @@ public class ScreenPreferences {
 	@Configuration // implies that the preference name in the SharedPreferences store is "brightness"
 	private String brightness;
 
-	@Configuration("length") // implies that the preference name in the SharedPreferences store is "brightness"
+	@Configuration("length") // implies that the preference name in the SharedPreferences store is "length"
 	private Integer scale;
 
 	public String getBrightness() {
