@@ -18,6 +18,7 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		Log.i(TAG, "onCreate");
+        // TODO add Constretto example here
         setContentView(R.layout.main);
     }
 
