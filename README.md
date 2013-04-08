@@ -3,6 +3,41 @@ constretto-android
 
 Useful [Constretto project](http://constretto.github.io/) extensions for Android.
 
+Quickstart
+----------
+
+### 1. Add annotations to your POJO
+```java
+public class ScreenPreferences {
+	
+	@Configuration // implies that the preference name in the SharedPreferences store is "brightness"
+	private String brightness;
+
+	@Configuration("length") // implies that the preference name in the SharedPreferences store is "brightness"
+	private Integer scale;
+
+	public String getBrightness() {
+		return brightness; 
+	}
+
+	public Integer getScale() {
+		return scale;
+	}
+
+}
+```
+
+### 2. Create Constretto Configuration
+```java
+SharedPreferences prefs = this.getSharedPreferences("org.constretto.app", Context.MODE_PRIVATE);
+final ConstrettoConfiguration configuration = ConstrettoAndroidBuilder.createConfigurationForSharedPreferences(prefs);
+```
+
+### 3. Inject configuration
+```java
+final ScreenPreferences screenPreferences = configuration.as(ScreenPreferences.class);
+```
+
 Planned features
 ----------------
 
