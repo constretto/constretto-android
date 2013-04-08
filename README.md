@@ -30,7 +30,7 @@ public class ScreenPreferences {
 ### 2. Create Constretto Configuration
 ```java
 SharedPreferences prefs = this.getSharedPreferences("org.constretto.app", Context.MODE_PRIVATE);
-final ConstrettoConfiguration configuration = ConstrettoAndroidBuilder.createConfigurationForSharedPreferences(prefs);
+ConstrettoConfiguration conf = ConstrettoAndroidBuilder.createConfigurationForSharedPreferences(prefs);
 ```
 
 ### 3. Inject configuration
