@@ -2,6 +2,7 @@ constretto-android
 ==================
 
 Useful [Constretto project](http://constretto.github.io/) extensions for Android.
+[![Build Status](https://travis-ci.org/constretto/constretto-android.png?branch=master)](https://travis-ci.org/constretto/constretto-android)
 
 Quickstart
 ----------
